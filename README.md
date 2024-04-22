@@ -24,7 +24,11 @@ That's it!
 
 Currently, I understand that it's challenging to selectively opt-in or out of certain kinds of leaks and/or to exclude specific patterns while maintaining good UX.
 
-By default, Leakz does **NOT** scan for sensitive fields; you can configure this in the [`config.ts`](/src/config.ts) file, build & compile.
+By default, Leakz does **NOT** scan for sensitive fields; you can configure this in the [`config.ts`](/src/config.ts) file and then rebuild and compile the source to apply them.
+
+### Limitations
+
+Leakz currently does not offer scanning for leaks in request and/or response headers. See https://github.com/caido/caido/issues/972.
 
 ## License
 
