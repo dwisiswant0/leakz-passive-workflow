@@ -1,0 +1,35 @@
+{
+  "name": "Leakz",
+  "version": "1.0.0",
+  "description": "Leakz is Caido's passive workflow to find potential leaked secrets, PII, and sensitive fields.",
+  "main": "dist/leakz.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "bun build ./src/leakz.ts --outdir dist/ --minify",
+    "compile": "bun run ./scripts/compile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwisiswant0/leakz-passive-workflow.git"
+  },
+  "keywords": [
+    "caido",
+    "caido-workflow",
+    "passive-workflow",
+    "caido-passive-workflow"
+  ],
+  "author": "Dwi Siswanto <me@dw1.io>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dwisiswant0/leakz-passive-workflow/issues"
+  },
+  "homepage": "https://github.com/dwisiswant0/leakz-passive-workflow#readme",
+  "devDependencies": {
+    "@caido/sdk-workflow": "^0.35.0",
+    "ts-loader": "^9.5.1",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

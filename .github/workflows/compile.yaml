@@ -1,0 +1,26 @@
+name: Compile
+
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - 'src/*.ts'
+      - 'src/db.json'
+  workflow_dispatch:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
+      - uses: teler-sh/actions/setup-git@v1
+        with:
+          username: ghost
+      - run: bun run build
+      - run: bun run compile
+      - run: |
+          git commit -am "build: compile workflow ($(jq -r '.id' dist/Leakz.json))"
+          git push origin $GITHUB_REF_NAME
+        continue-on-error: true
