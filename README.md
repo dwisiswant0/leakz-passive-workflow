@@ -4,7 +4,7 @@
 
 ## Install
 
-1. Download the workflow file: `wget https://github.com/dwisiswant0/leakz-passive-workflow/raw/master/dist/Leakz.json`.
+1. Download the workflow file via [releases page](https://github.com/dwisiswant0/leakz-passive-workflow/releases) or: `wget https://github.com/dwisiswant0/leakz/raw/master/dist/Leakz.json`.
 1. In Caido, navigate to **Testing > Workflows**, then **Import** the workflow file.
 
 That's it!
