@@ -24,5 +24,5 @@ jobs:
         with:
           upload_url: ${{ steps.release.outputs.upload_url }}
           asset_path: ./dist/Leakz.json
-          asset_name: Leakz-${{ github.ref }}.json
+          asset_name: Leakz-${{ github.ref_name }}.json
           asset_content_type: application/json
