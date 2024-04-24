@@ -7,6 +7,15 @@
 1. Download the workflow file via [releases page](https://github.com/dwisiswant0/leakz-passive-workflow/releases) or: `wget https://github.com/dwisiswant0/leakz/raw/master/dist/Leakz.json`.
 1. In Caido, navigate to **Testing > Workflows**, then **Import** the workflow file.
 
+— or
+
+1. Just execute: `bun run workflow:install`.
+1. After that, refresh your Caido instance by right-clicking and selecting **Reload**.
+
+> [!NOTE]
+> To update, you must first uninstall it using `bun run workflow:uninstall`,
+> and then reinstall it to apply the changes.
+
 That's it!
 
 > [!IMPORTANT]
