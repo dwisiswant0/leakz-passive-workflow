@@ -4,7 +4,7 @@
  * if desired.
  * Valid kinds are 'secret', 'PII', and 'field' (case-sensitive).
  */
-export const nopKinds = ['field'];
+export const nopKinds = ['field', 'PII'];
 
 /**
  * Object containing exclusion patterns for different kinds.
