@@ -37,7 +37,7 @@ By default, Leakz does **NOT** scan for PII & sensitive fields; you can configur
 
 ### Limitations
 
-Leakz currently does not offer scanning for leaks in request/response headers. See https://github.com/caido/caido/issues/972.
+~Leakz currently does not offer scanning for leaks in request/response headers. See https://github.com/caido/caido/issues/972.~
 
 ## License
 
