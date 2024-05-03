@@ -72,6 +72,11 @@ export async function run(input: PassiveInput, sdk: SDK): Promise<Data | undefin
 
   if (request && response) {
     const body = response.getBody().toText();
+    const headers = {
+      request: JSON.stringify(request.getHeaders()),
+      response: JSON.stringify(response.getHeaders())
+    }
+
     for (const kind in db) {
       let results = [];
 
@@ -80,8 +85,8 @@ export async function run(input: PassiveInput, sdk: SDK): Promise<Data | undefin
       switch (kind) {
         case 'field':
           results = await findFields(
-            request.getPath(), request.getQuery(), request.getHeader('').join(' '),
-            request.getBody().toText(), response.getHeader('').toString(), body
+            request.getPath(), request.getQuery(), headers.request,
+            request.getBody().toText(), headers.response, body
           );
           break;
         default: // 'secret' or 'PII'
