@@ -85,7 +85,6 @@ export async function run(input: PassiveInput, sdk: SDK): Promise<Data | undefin
           );
           break;
         default: // 'secret' or 'PII'
-          sdk.console.log(kind)
           results = await findLeaks(body, kind);
           break;
       }
