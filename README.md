@@ -12,9 +12,10 @@
 1. Just execute: `bun run workflow:install`.
 1. After that, refresh your Caido instance by right-clicking and selecting **Reload**.
 
-> [!NOTE]
+> [!TIP]
 > To update, you must first uninstall it using `bun run workflow:uninstall`,
-> and then reinstall it to apply the changes.
+> and then reinstall it to apply the changes,
+> or simply execute `bun run workflow:update`.
 
 That's it!
 
