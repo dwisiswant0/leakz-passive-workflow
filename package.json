@@ -32,7 +32,8 @@
     "build": "bun build ./src/leakz.ts --outdir dist/ --minify",
     "compile": "bun run ./scripts/compile.js",
     "workflow:install": "bun run ./scripts/workflow/install.js",
-    "workflow:uninstall": "bun run ./scripts/workflow/uninstall.js"
+    "workflow:uninstall": "bun run ./scripts/workflow/uninstall.js",
+    "workflow:update": "bun run ./scripts/workflow/update.js"
   },
   "dependencies": {
     "date-and-time": "^3.1.1"
