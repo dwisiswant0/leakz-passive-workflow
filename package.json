@@ -8,7 +8,7 @@
   },
   "main": "dist/leakz.js",
   "devDependencies": {
-    "@caido/sdk-workflow": "^0.36.1",
+    "@caido/sdk-workflow": "^0.38.0",
     "ts-loader": "^9.5.1",
     "@types/bun": "latest"
   },
